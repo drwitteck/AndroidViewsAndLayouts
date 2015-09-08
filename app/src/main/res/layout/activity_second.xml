@@ -19,13 +19,24 @@
         android:src="@drawable/testimage"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="44dp" />
+        android:layout_marginTop="44dp"
+        android:alpha="0"
+        android:adjustViewBounds="true" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_gravity="center_horizontal"
+        android:max="100"
+        android:progress="1"
+        android:indeterminate="false" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Next Screen"
-        android:id="@+id/button2"
+        android:id="@+id/nextButton"
         android:layout_gravity="center_horizontal" />
 
 </LinearLayout>
