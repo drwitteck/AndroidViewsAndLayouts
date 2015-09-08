@@ -7,7 +7,7 @@
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
         <TableRow>
 
             <TextView
@@ -19,7 +19,7 @@
             <EditText
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText"
+                android:id="@+id/nameText"
                 android:layout_centerHorizontal="true"
                 android:layout_column="1" />
         </TableRow>
@@ -36,8 +36,8 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
                 android:ems="10"
-                android:id="@+id/editText2"
-                android:layout_below="@+id/editText"
+                android:id="@+id/passwordText"
+                android:layout_below="@+id/nameText"
                 android:layout_centerHorizontal="true" />
         </TableRow>
 
@@ -52,8 +52,8 @@
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
                 android:ems="10"
-                android:id="@+id/editText3"
-                android:layout_below="@+id/editText2"
+                android:id="@+id/emailText"
+                android:layout_below="@+id/passwordText"
                 android:layout_centerHorizontal="true" />
         </TableRow>
 
@@ -68,9 +68,22 @@
                 android:layout_height="wrap_content"
                 android:inputType="phone"
                 android:ems="10"
-                android:id="@+id/editText4"
-                android:layout_below="@+id/editText3"
+                android:id="@+id/telephoneText"
+                android:layout_below="@+id/emailText"
                 android:layout_centerHorizontal="true" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Role"
+                android:layout_column="0" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+                android:layout_column="1" />
         </TableRow>
     </TableLayout>
 
@@ -81,4 +94,13 @@
         android:id="@+id/button"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/saveButton"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
